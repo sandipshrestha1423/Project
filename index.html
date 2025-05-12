@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhaiyatFest 2025</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Using simple SVG for Sparkles/Festival Icon -->
+    <style>
+      .icon-sparkles { width: 24px; height: 24px; fill: currentColor; }
+      .icon-calendar, .icon-map-pin, .icon-ticket, .icon-zap, .icon-users, .icon-music, .icon-palette, .icon-mail, .icon-phone, .icon-send, .icon-maximize, .icon-x, .icon-check-circle, .icon-star, .icon-menu, .icon-facebook, .icon-instagram, .icon-twitter, .icon-youtube, .icon-clock {
+        width: 20px; height: 20px; display: inline-block; vertical-align: middle; margin-right: 5px; fill: currentColor;
+      }
+    </style>
+</head>
+<body>
+    <header id="site-header">
+        <div class="container">
+            <a href="/" class="logo">
+                <svg class="icon-sparkles" viewBox="0 0 24 24"><path d="M12 .5l2.5 5 5 2.5-5 2.5-2.5 5-2.5-5-5-2.5 5-2.5L12 .5zm0 8l1.5 3 3 1.5-3 1.5-1.5 3-1.5-3-3-1.5 3-1.5L12 8.5zM5 15l1 2 2 1-2 1-1 2-1-2-2-1 2-1 1-2zm14 0l1 2 2 1-2 1-1 2-1-2-2-1 2-1 1-2z"/></svg>
+                WhaiyatFest 2025
+            </a>
+            <nav id="main-nav">
+                <a href="#about">About</a>
+                <a href="#lineup">Lineup</a>
+                <a href="#tickets">Tickets</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#contact">Contact</a>
+                <a href="#tickets" class="button primary-button nav-button">Get Tickets</a>
+            </nav>
+            <button id="mobile-menu-toggle" aria-label="Open menu">
+                <svg class="icon-menu" viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg>
+            </button>
+        </div>
+    </header>
+    <div id="mobile-menu" class="mobile-nav">
+        <a href="#about">About</a>
+        <a href="#lineup">Lineup</a>
+        <a href="#tickets">Tickets</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+        <a href="#tickets" class="button primary-button nav-button">Get Tickets</a>
+    </div>
+
+    <main>
+        <section id="hero">
+            <div class="hero-background">
+                <img src="https://picsum.photos/seed/hero/1920/1080" alt="WhaiyatFest vibrant stage lights" data-ai-hint="festival stage lights" />
+            </div>
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+                <svg class="icon-zap hero-icon" viewBox="0 0 24 24"><path d="M7 2v11h3v9l7-12h-4l4-8z"></path></svg>
+                <h1><span class="gradient-text">WhaiyatFest 2025</span></h1>
+                <p class="hero-details">
+                    <svg class="icon-calendar" viewBox="0 0 24 24"><path d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 1.99 2H19c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z"></path></svg>
+                    July 15-17, 2025
+                </p>
+                <p class="hero-details">
+                    <svg class="icon-map-pin" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path></svg>
+                    Vibrant Valley, Electra City
+                </p>
+                <div class="hero-buttons">
+                    <a href="#tickets" class="button primary-button large-button">
+                        <svg class="icon-ticket" viewBox="0 0 24 24"><path d="M20 6h-4V4c0-1.1-.9-2-2-2h-4c-1.1 0-2 .9-2 2v2H4c-1.1 0-2 .9-2 2v11c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-6 0h-4V4h4v2zm4 14H6V8h2v2h8V8h2v12z"></path></svg>
+                        Grab Your Tickets
+                    </a>
+                    <a href="#lineup" class="button outline-button large-button">Explore Lineup</a>
+                </div>
+                <div id="countdown-timer" class="countdown">
+                    <h2>The Energy Builds In:</h2>
+                    <div class="timer-grid">
+                        <!-- Timer components will be injected here by JS -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="scroll-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <h2><span class="gradient-text">About WhaiyatFest</span></h2>
+                    <p>WhaiyatFest isn't just a festival; it's an experience. A vibrant three-day celebration of music, art, and community, nestled in the heart of Vibrant Valley. Prepare for an unforgettable journey filled with mesmerizing performances, stunning art installations, and connections that last a lifetime.</p>
+                </div>
+                <div class="about-grid">
+                    <div class="about-image">
+                        <img src="https://picsum.photos/seed/about/800/600" alt="Fusion Fest energetic crowd and stage" data-ai-hint="festival crowd stage" />
+                    </div>
+                    <div class="about-text">
+                        <h3>
+                            <svg class="icon-sparkles" viewBox="0 0 24 24"><path d="M12 .5l2.5 5 5 2.5-5 2.5-2.5 5-2.5-5-5-2.5 5-2.5L12 .5zm0 8l1.5 3 3 1.5-3 1.5-1.5 3-1.5-3-3-1.5 3-1.5L12 8.5zM5 15l1 2 2 1-2 1-1 2-1-2-2-1 2-1 1-2zm14 0l1 2 2 1-2 1-1 2-1-2-2-1 2-1 1-2z"/></svg>
+                            More Than Just Music
+                        </h3>
+                        <p>At WhaiyatFest, we believe in the power of shared experiences to unite and inspire. We've meticulously curated a diverse lineup of world-renowned musicians and groundbreaking emerging artists. This sonic tapestry is woven together with breathtaking visual arts, interactive installations that blur the lines between observer and participant, and culinary delights that fuel your adventure.</p>
+                        <p>Our mission is to cultivate an atmosphere where creativity flourishes, friendships are forged in the heat of the moment, and memories are etched into the fabric of your being. Join us for three days of pure, unadulterated energy, boundless artistic expression, and a profound celebration of life itself.</p>
+                    </div>
+                </div>
+                <div class="highlights-grid">
+                    <div class="highlight-card">
+                        <svg class="icon-zap" viewBox="0 0 24 24"><path d="M7 2v11h3v9l7-12h-4l4-8z"></path></svg>
+                        <h4>3 Electrifying Days</h4>
+                        <p>Non-stop music, art, and unforgettable moments.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <svg class="icon-users" viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"></path></svg>
+                        <h4>50+ Diverse Artists</h4>
+                        <p>A curated lineup spanning multiple genres and styles.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <svg class="icon-music" viewBox="0 0 24 24"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"></path></svg>
+                        <h4>Multiple Stages</h4>
+                        <p>Experience varied soundscapes from main stage to intimate tents.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <svg class="icon-palette" viewBox="0 0 24 24"><path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9c.83 0 1.5-.67 1.5-1.5 0-.39-.15-.74-.39-1.01-.23-.26-.38-.61-.38-.99 0-.83.67-1.5 1.5-1.5H16c2.76 0 5-2.24 5-5 0-4.42-4.03-8-9-8zm-5.5 9c-.83 0-1.5-.67-1.5-1.5S5.67 9 6.5 9 8 9.67 8 10.5 7.33 12 6.5 12zm3-4c-.83 0-1.5-.67-1.5-1.5S8.67 5 9.5 5s1.5.67 1.5 1.5S10.33 8 9.5 8zm5 0c-.83 0-1.5-.67-1.5-1.5S13.67 5 14.5 5s1.5.67 1.5 1.5S15.33 8 14.5 8zm3 4c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"></path></svg>
+                        <h4>Immersive Art</h4>
+                        <p>Interactive installations and visual wonders to ignite your senses.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="lineup" class="scroll-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <h2><span class="gradient-text">Lineup & Schedule</span></h2>
+                    <p>Discover the incredible artists gracing our stages. Plan your festival experience day by day and dive into the sound waves.</p>
+                </div>
+                <div class="tabs">
+                    <div class="tabs-list">
+                        <button class="tab-trigger active" data-tab="day1">Day 1</button>
+                        <button class="tab-trigger" data-tab="day2">Day 2</button>
+                        <button class="tab-trigger" data-tab="day3">Day 3</button>
+                    </div>
+                    <div id="day1" class="tab-content active">
+                        <div class="artist-grid">
+                            <!-- Artist cards for Day 1 will be injected by JS -->
+                        </div>
+                    </div>
+                    <div id="day2" class="tab-content">
+                        <div class="artist-grid">
+                           <!-- Artist cards for Day 2 will be injected by JS -->
+                        </div>
+                    </div>
+                    <div id="day3" class="tab-content">
+                        <div class="artist-grid">
+                           <!-- Artist cards for Day 3 will be injected by JS -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="tickets" class="scroll-reveal">
+            <div class="container">
+                <div class="section-header">
+                     <h2><span class="gradient-text">Secure Your Spot</span></h2>
+                    <p>Don't miss out on WhaiyatFest 2025! Choose your pass and get ready for an unforgettable immersive experience. Early bird prices won't last forever!</p>
+                </div>
+                <div class="ticket-grid">
+                    <!-- Ticket tiers will be injected by JS -->
+                </div>
+                <p class="disclaimer">All prices are in USD. Applicable taxes and service fees will be added at checkout. Tickets are non-refundable.</p>
+            </div>
+        </section>
+
+        <section id="gallery" class="scroll-reveal">
+            <div class="container">
+                <div class="section-header">
+                     <h2><span class="gradient-text">Festival Flashbacks</span></h2>
+                    <p>Relive the magic or get a sneak peek of what awaits. A glimpse into the vibrant, unforgettable moments of WhaiyatFest.</p>
+                </div>
+                <div class="gallery-grid">
+                    <!-- Gallery images will be injected by JS -->
+                </div>
+            </div>
+        </section>
+         <!-- Image Modal -->
+        <div id="imageModal" class="modal">
+            <span class="close-button">&times;</span>
+            <img class="modal-content" id="modalImage" src="" alt="">
+        </div>
+
+
+        <section id="contact" class="scroll-reveal">
+            <div class="container">
+                 <div class="section-header">
+                    <h2><span class="gradient-text">Get In Touch</span></h2>
+                    <p>Have questions, partnership ideas, or just want to say hi? Drop us a line or find us on the map. We're all ears!</p>
+                </div>
+                <div class="contact-grid">
+                    <div class="contact-form-container">
+                        <h3>Send Us A Message</h3>
+                        <form id="contact-form">
+                            <div>
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" placeholder="e.g., Alex Cosmic" required>
+                                <p class="error-message" id="name-error"></p>
+                            </div>
+                            <div>
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                                <p class="error-message" id="email-error"></p>
+                            </div>
+                            <div>
+                                <label for="message">Your Message</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Tell us about your query, feedback, or epic dance moves..." required></textarea>
+                                <p class="error-message" id="message-error"></p>
+                            </div>
+                            <button type="submit" class="button primary-button large-button">
+                                <svg class="icon-send" viewBox="0 0 24 24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path></svg>
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                    <div class="contact-info-container">
+                        <div class="contact-info-block">
+                            <h3>Contact Information</h3>
+                            <ul>
+                                <li>
+                                    <svg class="icon-map-pin" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path></svg>
+                                    123 Festival Avenue, Vibrant Valley, Electra City, EC 12345
+                                </li>
+                                <li>
+                                    <svg class="icon-mail" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"></path></svg>
+                                    <a href="mailto:info@WhaiyatFest.com">info@WhaiyatFest.com</a>
+                                </li>
+                                <li>
+                                    <svg class="icon-phone" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.24.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"></path></svg>
+                                    <a href="tel:+1234567890">(123) 456-7890</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="contact-info-block">
+                            <h3>Festival Location</h3>
+                            <div class="map-placeholder" data-ai-hint="map location placeholder">
+                                <p>Interactive Map (e.g., Google Maps)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                     <a href="/" class="logo">
+                        <svg class="icon-sparkles" viewBox="0 0 24 24"><path d="M12 .5l2.5 5 5 2.5-5 2.5-2.5 5-2.5-5-5-2.5 5-2.5L12 .5zm0 8l1.5 3 3 1.5-3 1.5-1.5 3-1.5-3-3-1.5 3-1.5L12 8.5zM5 15l1 2 2 1-2 1-1 2-1-2-2-1 2-1 1-2zm14 0l1 2 2 1-2 1-1 2-1-2-2-1 2-1 1-2z"/></svg>
+                        WhaiyatFest 2025
+                    </a>
+                    <p>The ultimate music and arts experience. Join us for a journey of sound, light, and creativity.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#lineup">Full Lineup</a></li>
+                        <li><a href="#tickets">Tickets & Passes</a></li>
+                        <li><a href="#gallery">Event Gallery</a></li>
+                        <li><a href="#contact">Contact & Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Connect With Us</h4>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><svg class="icon-facebook" viewBox="0 0 24 24"><path d="M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2m13 2h-2.5A3.5 3.5 0 0 0 12 8.5V11H9v3h3v7h3v-7h2.5L18 11h-2.5V8.5A.5.5 0 0 1 16 8h2V5z"/></svg></a>
+                        <a href="#" aria-label="Instagram"><svg class="icon-instagram" viewBox="0 0 24 24"><path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"/></svg></a>
+                        <a href="#" aria-label="Twitter"><svg class="icon-twitter" viewBox="0 0 24 24"><path d="M22.46 6c-.77.35-1.6.58-2.46.67.9-.53 1.59-1.37 1.92-2.38-.84.5-1.78.86-2.79 1.07C18.3.65 17.11 0 15.78 0c-2.65 0-4.8 2.15-4.8 4.8c0 .38.04.75.13 1.11C7.48 5.7 4.49 3.98 2.64.75c-.4.7-.62 1.5-.62 2.35c0 1.66.84 3.13 2.12 3.98c-.79-.03-1.53-.24-2.17-.6v.06c0 2.32 1.65 4.25 3.83 4.69c-.4.11-.82.17-1.25.17c-.31 0-.61-.03-.91-.09c.61 1.9 2.38 3.28 4.48 3.32C8.41 18.98 6.18 19.8 3.76 19.8c-.39 0-.78-.02-1.16-.07C5.07 20.95 7.89 22 10.92 22c7.43 0 11.99-6.08 11.99-11.77c0-.18 0-.36-.01-.53c.8-.57 1.48-1.28 2.02-2.06z"/></svg></a>
+                        <a href="#" aria-label="Youtube"><svg class="icon-youtube" viewBox="0 0 24 24"><path d="M10 15l5.19-3L10 9v6m11.56-7.79c.13.47.22 1.1.28 1.9.07.8.1 1.49.1 2.09L22 12c0 2.19-.16 3.8-.44 4.83c-.25.9-.83 1.48-1.73 1.73c-.47.13-1.33.22-2.65.28c-1.3.07-2.49.1-3.59.1L12 19c-4.19 0-6.8-.16-7.83-.44c-.9-.25-1.48-.83-1.73-1.73c-.13-.47-.22-1.1-.28-1.9c-.07-.8-.1-1.49-.1-2.09L2 12c0-2.19.16-3.8.44-4.83c.25-.9.83 1.48 1.73-1.73c.47-.13 1.33.22 2.65.28c1.3.07 2.49.1 3.59.1L12 5c4.19 0 6.8.16 7.83.44c.9.25 1.48.83 1.73 1.73z"/></svg></a>
+                    </div>
+                    <p>Stay updated with the latest news and announcements!</p>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; <span id="currentYear"></span> WhaiyatFest. All rights reserved. Designed with <span class="heart">&hearts;</span> by the FusionTeam.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <div id="toast-container"></div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
